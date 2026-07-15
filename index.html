@@ -28,6 +28,7 @@
     overflow-x:hidden;
   }
   button{font-family:inherit;color:inherit;background:none;border:none;cursor:pointer;}
+  a{color:inherit;text-decoration:none;}
   .serif{font-family:'Cormorant Garamond',serif;}
   :focus-visible{
     outline:2px solid var(--accent);
@@ -266,7 +267,6 @@
     text-transform:uppercase;width:fit-content;transition:opacity .2s;
   }
   .lb-save:hover{opacity:0.7;}
-  .lb-hint{margin-top:40px;padding-top:24px;font-size:0.7rem;color:#8d94ab;border-top:1px solid var(--line);}
 
   /* ===== MY STORY ===== */
   #story-overlay{
@@ -353,6 +353,8 @@
   .fav-remove{font-size:0.7rem;color:#8b91a5;opacity:0;transition:opacity .2s;flex-shrink:0;}
   .fav-item:hover .fav-remove{opacity:1;}
 
+  .footer-link{color:var(--accent);text-decoration:none;}
+  .footer-link:hover{text-decoration:underline;}
   footer{
     background:#0a1124;
     padding:48px 24px;text-align:center;font-size:0.7rem;letter-spacing:0.25em;
@@ -370,6 +372,7 @@
   <button class="nav-logo" id="nav-home">Krishiosity</button>
   <div class="nav-links">
     <button class="nav-link" id="nav-story">My Story</button>
+    <a class="nav-link" href="https://www.tiktok.com/@krishiosityart" target="_blank" rel="noopener">TikTok</a>
     <button class="nav-fav-btn" id="nav-fav-btn">
       <svg width="14" height="14" viewBox="0 0 24 24" id="nav-heart-icon" fill="none" stroke="#e8b04b" stroke-width="1.5">
         <path d="M12 21s-7.5-4.6-10-9.3C0.3 7.9 2 4 6 4c2.2 0 3.7 1.3 4.5 2.5C11.3 5.3 12.8 4 15 4c4 0 5.7 3.9 4 7.7C19.5 16.4 12 21 12 21z"/>
@@ -440,7 +443,7 @@
   </section>
 </main>
 
-<footer>Krishiosity Art · All works by the artist</footer>
+<footer>Krishiosity Art · All works by the artist · <a class="footer-link" href="https://www.tiktok.com/@krishiosityart" target="_blank" rel="noopener">@krishiosityart on TikTok</a></footer>
 
 <!-- ===== LIGHTBOX ===== -->
 <div id="lightbox" role="dialog" aria-modal="true" aria-label="Artwork detail">
@@ -468,7 +471,6 @@
       </svg>
       <span id="lb-save-label">Save to Collection</span>
     </button>
-    <div class="lb-hint">Use ← → to navigate · tap image to zoom · esc to close</div>
   </div>
 </div>
 
